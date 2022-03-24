@@ -45,7 +45,7 @@ INSERT INTO albums VALUES (12,'the show live',15,'53mn',6);
 INSERT INTO albums VALUES (13,'love yourself',24,'1h44mn',7);
 INSERT INTO albums VALUES (14,'7',20,'1h14mn',7);
 INSERT INTO albums VALUES (15,'boy',11,'42mn',8);
-INSERT INTO albums VALUES (16,'war',,10,'42mn',8);
+INSERT INTO albums VALUES (16,'war',10,'42mn',8);
 INSERT INTO albums VALUES (17,'random access memories',13,'1h14mn',9);
 INSERT INTO albums VALUES (18,'discovery',14,'1h01mn',9);
 INSERT INTO albums VALUES (19,'play',18,'1h30mn',10);
