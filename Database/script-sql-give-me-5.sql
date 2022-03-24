@@ -28,7 +28,7 @@ insert into artistes values(12,'beethoven',6);
 
 select * from artistes;
 
-CREATE Table albums (id INTEGER PRIMARY KEY, album VARCHAR ,track integer,temps varchar,FK_id_artiste integer);
+CREATE Table albums (id INTEGER PRIMARY KEY, album VARCHAR ,track integer,temps varchar,fk_id_artiste integer);
 
 INSERT INTO albums VALUES (1,'civilastion',16,'1h12mn',1);
 INSERT INTO albums VALUES (2,'la fete est fini',39,'2h28mn',1);
