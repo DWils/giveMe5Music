@@ -23,3 +23,36 @@ app.get('/genres', (req, res) => {
     });
     client.end;
 })
+
+app.get('/artistes', (req, res) => {
+    client.query(`SELECT * FROM artistes`, (err, result) => {
+        if (!err) {
+            res.send(result.rows);
+        } else {
+            res.send(err.message);
+        }
+    });
+    client.end
+})
+
+app.get('/albums', (req, res) => {
+    client.query(`SELECT * FROM albums`, (err, result) => {
+        if (!err) {
+            res.send(result.rows);
+        } else {
+            res.send(err.message);
+        }
+    });
+    client.end
+})
+
+app.get('/tracks', (req, res) => {
+    client.query(`SELECT * FROM tracks`, (err, result) => {
+        if (!err) {
+            res.send(result.rows);
+        } else {
+            res.send(err.message);
+        }
+    });
+    client.end
+})
