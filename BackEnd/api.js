@@ -14,7 +14,7 @@ app.listen(3300, () => {
 client.connect();
 
 app.get('/genres', (req, res) => {
-    client.query(`SELECT * FROM genre`, (err, result) => {
+    client.query(`SELECT * FROM genres`, (err, result) => {
         if (!err) {
             res.send(result.rows);
         } else {
@@ -37,17 +37,6 @@ app.get('/artistes', (req, res) => {
 
 app.get('/albums', (req, res) => {
     client.query(`SELECT * FROM albums`, (err, result) => {
-        if (!err) {
-            res.send(result.rows);
-        } else {
-            res.send(err.message);
-        }
-    });
-    client.end
-})
-
-app.get('/tracks', (req, res) => {
-    client.query(`SELECT * FROM tracks`, (err, result) => {
         if (!err) {
             res.send(result.rows);
         } else {

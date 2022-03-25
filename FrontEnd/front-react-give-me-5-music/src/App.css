@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+  background-color: #0D1D2C;
+  height: 100vh;
+  color : white;
+}
+
+h1 {
+  margin : 0;
+}
+
+
+nav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 10px;
+  background-color: #5C5792;
+}
+
+nav ul li {
+  margin : 0 10px;
+}
+
